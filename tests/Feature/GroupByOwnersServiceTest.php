@@ -23,13 +23,6 @@ class GroupByOwnersServiceTest extends TestCase
         $service = new GroupByOwnersService();
         $result = $service->groupByOwners($files);
 
-        if ($result === $expectedResult){
-            echo "Test passed";
-        }
-        else{
-            echo "Test failed";
-        }
-
         $this->assertEquals($expectedResult, $result);
     }
 }
